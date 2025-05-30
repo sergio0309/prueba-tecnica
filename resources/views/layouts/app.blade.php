@@ -25,11 +25,11 @@
                         <i class="uil uil-users-alt"></i>
                         <span>Usuarios</span>
                     </a>
-                    <a href="/" class="{{ request()->path() == '/productos' ? 'sidebar__menu--item sidebar__menu--active' : 'sidebar__menu--item' }}">
+                    <a href="/productos" class="{{ request()->path() == 'productos' ? 'sidebar__menu--item sidebar__menu--active' : 'sidebar__menu--item' }}">
                         <i class="uil uil-shopping-bag"></i>
                         <span>Productos</span>
                     </a>
-                    <a href="/" class="{{ request()->path() == '/pedidos' ? 'sidebar__menu--item sidebar__menu--active' : 'sidebar__menu--item' }}">
+                    <a href="/pedidos" class="{{ request()->path() == 'pedidos' ? 'sidebar__menu--item sidebar__menu--active' : 'sidebar__menu--item' }}">
                         <i class="uil uil-shopping-cart-alt"></i>
                         <span>Pedidos</span>
                     </a>

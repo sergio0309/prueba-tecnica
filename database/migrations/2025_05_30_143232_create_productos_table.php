@@ -13,6 +13,12 @@ return new class extends Migration
     {
         Schema::create('productos', function (Blueprint $table) {
             $table->id();
+            $table->string('nombre', 30);
+            $table->decimal('precio_bs', 10,2);
+            $table->decimal('precio_usd', 10,2);
+            $table->decimal('tasa_cambio', 10,2);
+            $table->bigInteger("user_id")->unsigned()->nullable();
+            $table->foreign("user_id")->references("id")->on("users");
             $table->timestamps();
         });
     }
