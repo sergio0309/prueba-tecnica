@@ -12,5 +12,7 @@ Route::get('/usuarios/{id}/edit', [UserController::class, 'edit'])->name('usuari
 Route::put('/usuarios/{id}', [UserController::class, 'update'])->name('usuarios.update');
 Route::delete('/usuarios/{id}', [UserController::class, 'destroy'])->name('usuarios.destroy');
 
+Route::get('/productos', [ProductoController::class, 'index'])->name('productos.index');
+Route::post('/productos/store', [ProductoController::class, 'store'])->name('productos.store');
+Route::delete('/productos/{producto}', [ProductoController::class, 'destroy'])->name('productos.destroy');
 
-Route::get('/productos', [ProductoController::class, 'index']);
