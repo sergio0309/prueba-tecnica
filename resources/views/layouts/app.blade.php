@@ -21,7 +21,7 @@
                     </div>
                 </div>
                 <ul class="sidebar__menu">
-                    <a href="/" class="{{ request()->path() == '/' ? 'sidebar__menu--item sidebar__menu--active' : 'sidebar__menu--item' }}">
+                    <a href="/usuarios" class="{{ request()->path() == 'usuarios' ? 'sidebar__menu--item sidebar__menu--active' : 'sidebar__menu--item' }}">
                         <i class="uil uil-users-alt"></i>
                         <span>Usuarios</span>
                     </a>
